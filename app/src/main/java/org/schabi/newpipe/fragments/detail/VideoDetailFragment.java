@@ -78,6 +78,7 @@ import org.schabi.newpipe.fragments.EmptyFragment;
 import org.schabi.newpipe.fragments.list.comments.CommentReplyFragment;
 import org.schabi.newpipe.fragments.list.comments.CommentsFragment;
 import org.schabi.newpipe.fragments.list.comments.CommentsFragmentContainer;
+import org.schabi.newpipe.fragments.list.kiosk.KioskFragment;
 import org.schabi.newpipe.fragments.list.sponsorblock.SponsorBlockFragment;
 import org.schabi.newpipe.fragments.list.sponsorblock.SponsorBlockFragmentListener;
 import org.schabi.newpipe.fragments.list.videos.RelatedItemsFragment;
@@ -207,6 +208,8 @@ public final class VideoDetailFragment
     int bottomSheetState = BottomSheetBehavior.STATE_EXPANDED;
     @State
     protected boolean autoPlayEnabled = true;
+    @State
+    protected boolean forceHideRelatedItems = false;
     @State
     SponsorBlockMode currentSponsorBlockMode = null;
 
@@ -1080,11 +1083,11 @@ public final class VideoDetailFragment
             }
         }
 
-        if (showRelatedItems && binding.relatedItemsLayout == null) {
+        if (shouldShowRelatedItemsTab() && binding.relatedItemsLayout == null) {
             // temp empty fragment. will be updated in handleResult
             try {
                 pageAdapter.addFragment(EmptyFragment.newInstance(false), RELATED_TAB_TAG);
-                tabIcons.add(R.drawable.ic_art_track);
+                tabIcons.add(forceHideRelatedItems ? R.drawable.ic_podcast : R.drawable.ic_art_track);
                 tabContentDescriptions.add(R.string.related_items_tab_description);
             } catch (IllegalStateException e) {
                 // Fragment already added
@@ -1143,13 +1146,15 @@ public final class VideoDetailFragment
     }
 
     private void updateTabs(@NonNull final StreamInfo info) {
-        if (info.isRoundPlayStream() || (showRelatedItems && info.isSupportRelatedItems())) {
+        if (info.isRoundPlayStream() || (shouldShowRelatedItemsTab()
+                && (forceHideRelatedItems || info.isSupportRelatedItems()))) {
             try {
+                final Fragment relatedItemsFragment = getRelatedItemsFragment(info);
                 if (binding.relatedItemsLayout == null) { // phone
-                    pageAdapter.updateItem(RELATED_TAB_TAG, RelatedItemsFragment.getInstance(info));
+                    pageAdapter.updateItem(RELATED_TAB_TAG, relatedItemsFragment);
                 } else { // tablet + TV
                     getChildFragmentManager().beginTransaction()
-                            .replace(R.id.relatedItemsLayout, RelatedItemsFragment.getInstance(info))
+                            .replace(R.id.relatedItemsLayout, relatedItemsFragment)
                             .commitAllowingStateLoss();
                     binding.relatedItemsLayout.setVisibility(
                             isPlayerAvailable() && player.isFullscreen() ? View.GONE : View.VISIBLE);
@@ -1159,7 +1164,7 @@ public final class VideoDetailFragment
                 Log.e(TAG, "updateTabs() error updating related tab", e);
             }
         }
-        if (!info.isSupportRelatedItems()){
+        if (!forceHideRelatedItems && !info.isSupportRelatedItems()){
             int index = pageAdapter.getItemPositionByTitle(RELATED_TAB_TAG);
             if(index != -1){
                 pageAdapter.removeItem(index);
@@ -1226,6 +1231,24 @@ public final class VideoDetailFragment
                     .contains(COMMENTS);
         } catch (final ExtractionException e) {
             return false;
+        }
+    }
+
+    private boolean shouldShowRelatedItemsTab() {
+        return showRelatedItems;
+    }
+
+    @NonNull
+    private Fragment getRelatedItemsFragment(@NonNull final StreamInfo info) {
+        if (!forceHideRelatedItems) {
+            return RelatedItemsFragment.getInstance(info);
+        }
+
+        try {
+            return KioskFragment.getInstance(info.getServiceId(), "Recommended Podcasts");
+        } catch (final Exception e) {
+            Log.e(TAG, "getRelatedItemsFragment() fallback to related items", e);
+            return RelatedItemsFragment.getInstance(info);
         }
     }
 
@@ -1465,6 +1488,10 @@ public final class VideoDetailFragment
 
     public void setAutoPlay(final boolean autoPlay) {
         this.autoPlayEnabled = autoPlay;
+    }
+
+    public void setForceHideRelatedItems(final boolean hideRelatedItems) {
+        this.forceHideRelatedItems = hideRelatedItems;
     }
 
     private void startOnExternalPlayer(@NonNull final Context context,
@@ -1721,7 +1748,7 @@ public final class VideoDetailFragment
         binding.detailSecondaryControlPanel.setVisibility(View.GONE);
 
         if (binding.relatedItemsLayout != null) {
-            if (showRelatedItems) {
+            if (shouldShowRelatedItemsTab()) {
                 binding.relatedItemsLayout.setVisibility(
                         isPlayerAvailable() && player.isFullscreen() ? View.GONE : View.INVISIBLE);
             } else {
@@ -2170,7 +2197,8 @@ public final class VideoDetailFragment
         }
 
         if (binding.relatedItemsLayout != null) {
-            binding.relatedItemsLayout.setVisibility(fullscreen ? View.GONE : View.VISIBLE);
+            binding.relatedItemsLayout.setVisibility(fullscreen || !shouldShowRelatedItemsTab()
+                    ? View.GONE : View.VISIBLE);
         }
         scrollToTop();
 

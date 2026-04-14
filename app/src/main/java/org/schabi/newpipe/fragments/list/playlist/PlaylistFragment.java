@@ -52,6 +52,7 @@ import org.schabi.newpipe.player.playqueue.PlaylistPlayQueue;
 import org.schabi.newpipe.util.ExtractorHelper;
 import org.schabi.newpipe.util.Localization;
 import org.schabi.newpipe.util.NavigationHelper;
+import org.schabi.newpipe.util.OnClickGesture;
 import org.schabi.newpipe.util.PicassoHelper;
 import org.schabi.newpipe.info_list.dialog.StreamDialogDefaultEntry;
 import org.schabi.newpipe.util.external_communication.ShareUtils;
@@ -67,10 +68,14 @@ import io.reactivex.rxjava3.core.Flowable;
 import io.reactivex.rxjava3.core.Single;
 import io.reactivex.rxjava3.disposables.CompositeDisposable;
 import io.reactivex.rxjava3.disposables.Disposable;
+import icepick.State;
 
 public class PlaylistFragment extends BaseListInfoFragment<StreamInfoItem, PlaylistInfo> {
 
     private static final String PICASSO_PLAYLIST_TAG = "PICASSO_PLAYLIST_TAG";
+
+    @State
+    protected boolean podcastMode;
 
     private CompositeDisposable disposables;
     private Subscription bookmarkReactor;
@@ -94,8 +99,15 @@ public class PlaylistFragment extends BaseListInfoFragment<StreamInfoItem, Playl
 
     public static PlaylistFragment getInstance(final int serviceId, final String url,
                                                final String name) {
+        return getInstance(serviceId, url, name, false);
+    }
+
+    public static PlaylistFragment getInstance(final int serviceId, final String url,
+                                               final String name,
+                                               final boolean podcastMode) {
         final PlaylistFragment instance = new PlaylistFragment();
         instance.setInitialData(serviceId, url, name);
+        instance.podcastMode = podcastMode;
         return instance;
     }
 
@@ -143,6 +155,32 @@ public class PlaylistFragment extends BaseListInfoFragment<StreamInfoItem, Playl
         // Is mini variant still relevant?
         // Only the remote playlist screen uses it now
         infoListAdapter.setUseMiniVariant(true);
+    }
+
+    @Override
+    protected void initListeners() {
+        super.initListeners();
+
+        if (!podcastMode) {
+            return;
+        }
+
+        infoListAdapter.setOnStreamSelectedListener(new OnClickGesture<>() {
+            @Override
+            public void selected(final StreamInfoItem selectedItem) {
+                onItemSelected(selectedItem);
+                final PlayQueue playQueue = getPlayQueueStartingAt(selectedItem);
+                NavigationHelper.playOnBackgroundPlayer(requireContext(), playQueue, true);
+                NavigationHelper.openVideoDetailFragment(requireContext(), getFM(),
+                        selectedItem.getServiceId(), selectedItem.getUrl(), selectedItem.getName(),
+                        playQueue, false, false, true);
+            }
+
+            @Override
+            public void held(final StreamInfoItem selectedItem) {
+                showInfoItemDialog(selectedItem);
+            }
+        });
     }
 
     private PlayQueue getPlayQueueStartingAt(final StreamInfoItem infoItem) {

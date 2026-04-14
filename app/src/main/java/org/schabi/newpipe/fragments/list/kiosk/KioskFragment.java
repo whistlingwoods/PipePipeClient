@@ -14,6 +14,7 @@ import androidx.appcompat.app.ActionBar;
 import org.schabi.newpipe.R;
 import org.schabi.newpipe.error.ErrorInfo;
 import org.schabi.newpipe.error.UserAction;
+import org.schabi.newpipe.extractor.InfoItem;
 import org.schabi.newpipe.extractor.ListExtractor;
 import org.schabi.newpipe.extractor.NewPipe;
 import org.schabi.newpipe.extractor.StreamingService;
@@ -23,9 +24,16 @@ import org.schabi.newpipe.extractor.linkhandler.ListLinkHandlerFactory;
 import org.schabi.newpipe.extractor.localization.ContentCountry;
 import org.schabi.newpipe.extractor.stream.StreamInfoItem;
 import org.schabi.newpipe.fragments.list.BaseListInfoFragment;
+import org.schabi.newpipe.player.playqueue.PlayQueue;
+import org.schabi.newpipe.player.playqueue.SinglePlayQueue;
 import org.schabi.newpipe.util.ExtractorHelper;
 import org.schabi.newpipe.util.KioskTranslator;
 import org.schabi.newpipe.util.Localization;
+import org.schabi.newpipe.util.NavigationHelper;
+import org.schabi.newpipe.util.OnClickGesture;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import icepick.State;
 import io.reactivex.rxjava3.core.Single;
@@ -55,6 +63,8 @@ import io.reactivex.rxjava3.core.Single;
  */
 
 public class KioskFragment extends BaseListInfoFragment<StreamInfoItem, KioskInfo> {
+    private static final String RECOMMENDED_PODCASTS_KIOSK_ID = "Recommended Podcasts";
+
     @State
     String kioskId = "";
     String kioskTranslatedName;
@@ -97,6 +107,40 @@ public class KioskFragment extends BaseListInfoFragment<StreamInfoItem, KioskInf
         kioskTranslatedName = KioskTranslator.getTranslatedKioskName(kioskId, activity);
         name = kioskTranslatedName;
         contentCountry = Localization.getPreferredContentCountry(requireContext());
+    }
+
+    @Override
+    protected void initViews(@NonNull final View rootView, @Nullable final Bundle savedInstanceState) {
+        super.initViews(rootView, savedInstanceState);
+        if (isRecommendedPodcastsKiosk()) {
+            infoListAdapter.setUseMiniVariant(true);
+        }
+    }
+
+    @Override
+    protected void initListeners() {
+        super.initListeners();
+
+        if (!isRecommendedPodcastsKiosk()) {
+            return;
+        }
+
+        infoListAdapter.setOnStreamSelectedListener(new OnClickGesture<>() {
+            @Override
+            public void selected(final StreamInfoItem selectedItem) {
+                onItemSelected(selectedItem);
+                final PlayQueue playQueue = getPodcastRecommendationsPlayQueueStartingAt(selectedItem);
+                NavigationHelper.playOnBackgroundPlayer(requireContext(), playQueue, true);
+                NavigationHelper.openVideoDetailFragment(requireContext(), getFM(),
+                        selectedItem.getServiceId(), selectedItem.getUrl(), selectedItem.getName(),
+                        playQueue, false, false, true);
+            }
+
+            @Override
+            public void held(final StreamInfoItem selectedItem) {
+                showInfoItemDialog(selectedItem);
+            }
+        });
     }
 
     @Override
@@ -160,5 +204,25 @@ public class KioskFragment extends BaseListInfoFragment<StreamInfoItem, KioskInf
 
         name = kioskTranslatedName;
         setTitle(kioskTranslatedName);
+    }
+
+    private boolean isRecommendedPodcastsKiosk() {
+        return RECOMMENDED_PODCASTS_KIOSK_ID.equals(kioskId);
+    }
+
+    @NonNull
+    private PlayQueue getPodcastRecommendationsPlayQueueStartingAt(
+            @NonNull final StreamInfoItem selectedItem) {
+        final List<StreamInfoItem> streamItems = new ArrayList<>();
+        for (final InfoItem item : infoListAdapter.getItemsList()) {
+            if (item instanceof StreamInfoItem) {
+                streamItems.add((StreamInfoItem) item);
+            }
+        }
+
+        if (streamItems.isEmpty()) {
+            return new SinglePlayQueue(selectedItem);
+        }
+        return new SinglePlayQueue(streamItems, Math.max(streamItems.indexOf(selectedItem), 0));
     }
 }

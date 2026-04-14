@@ -373,6 +373,19 @@ public final class NavigationHelper {
                                                @NonNull final String title,
                                                @Nullable final PlayQueue playQueue,
                                                final boolean switchingPlayers) {
+        openVideoDetailFragment(context, fragmentManager, serviceId, url, title,
+                playQueue, switchingPlayers, null, false);
+    }
+
+    public static void openVideoDetailFragment(@NonNull final Context context,
+                                               @NonNull final FragmentManager fragmentManager,
+                                               final int serviceId,
+                                               @Nullable final String url,
+                                               @NonNull final String title,
+                                               @Nullable final PlayQueue playQueue,
+                                               final boolean switchingPlayers,
+                                               @Nullable final Boolean forceAutoPlay,
+                                               final boolean forceHideRelatedItems) {
 
         final boolean autoPlay;
         @Nullable final PlayerService.PlayerType playerType = PlayerHolder.getInstance().getType();
@@ -390,9 +403,12 @@ public final class NavigationHelper {
             autoPlay = false;
         }
 
+        final boolean effectiveAutoPlay = forceAutoPlay == null ? autoPlay : forceAutoPlay;
+
         final RunnableWithVideoDetailFragment onVideoDetailFragmentReady = detailFragment -> {
             expandMainPlayer(detailFragment.requireActivity());
-            detailFragment.setAutoPlay(autoPlay);
+            detailFragment.setAutoPlay(effectiveAutoPlay);
+            detailFragment.setForceHideRelatedItems(forceHideRelatedItems);
             if (switchingPlayers) {
                 // Situation when user switches from players to main player. All needed data is
                 // here, we can start watching (assuming newQueue equals playQueue).
@@ -411,7 +427,8 @@ public final class NavigationHelper {
         } else {
             final VideoDetailFragment instance = VideoDetailFragment
                     .getInstance(serviceId, url, title, playQueue);
-            instance.setAutoPlay(autoPlay);
+            instance.setAutoPlay(effectiveAutoPlay);
+            instance.setForceHideRelatedItems(forceHideRelatedItems);
 
             defaultTransaction(fragmentManager)
                     .replace(R.id.fragment_player_holder, instance)
@@ -441,8 +458,16 @@ public final class NavigationHelper {
     public static void openPlaylistFragment(final FragmentManager fragmentManager,
                                             final int serviceId, final String url,
                                             @NonNull final String name) {
+        openPlaylistFragment(fragmentManager, serviceId, url, name, false);
+    }
+
+    public static void openPlaylistFragment(final FragmentManager fragmentManager,
+                                            final int serviceId, final String url,
+                                            @NonNull final String name,
+                                            final boolean podcastMode) {
         defaultTransaction(fragmentManager)
-                .replace(R.id.fragment_holder, PlaylistFragment.getInstance(serviceId, url, name))
+                .replace(R.id.fragment_holder,
+                        PlaylistFragment.getInstance(serviceId, url, name, podcastMode))
                 .addToBackStack(null)
                 .commit();
     }
