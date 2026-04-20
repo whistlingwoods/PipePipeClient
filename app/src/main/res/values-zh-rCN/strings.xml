@@ -899,7 +899,7 @@
 <string name="sponsor_promote">成为支持者</string>
 <string name="random_play_order_title">随机顺序</string>
 <string name="random_play_order_summary">在后台播放时自动随机播放您的本地播放列表</string>
-<string name="update_log">经过一番努力，我们找到了重新让 YouTube 登录功能恢复正常的新方法。\n\n### 新功能\n\n- 重新支持登录 (YouTube)\n- 使用新方法确保标题不会被自动翻译 (YouTube)\n\n### 问题修复\n\n- 修复了因 SABR 加密导致的随机“内容不可用”错误 (YouTube)\n- 修复了相关项目没有观看次数和时长的问题 (YouTube)\n- 增加订阅源获取间隔以避免 IP 被封 (Bilibili)\n- 修复了部分链接被错误识别为 PeerTube URL 的问题\n\n### 其他\n\n- 更新翻译 (法语)\n- 提高稳定性</string>
+<string name="update_log">### 错误修复\n\n- 登录后随机播放失败（YouTube）\n- 有时在登录账号的情况下无法播放直播（YouTube）\n- 某些设备上 AVC1 视频播放会卡顿\n\n### 其他\n\n- 提升稳定性</string>
 <string name="speeding_playback_title">长按以加快播放</string>
 <string name="view_on_github">在GitHub上查看</string>
 <string name="donation_dialog_title">支持该项目</string>
@@ -1069,4 +1069,6 @@
 <string name="beta_test_dialog_title">加入 PipePipe 5.0.0 Beta-2 测试！</string>
 <string name="beta_test_dialog_message">感谢您一直以来的支持！我们很高兴发布 PipePipe 5.0.0 Beta-2，这是我们对应用从零重构的一次重大进展。\n\n此版本根据早期反馈，着重提升稳定性并完善功能。虽然我们离正式版更近了，但它仍然是测试版，您的反馈非常宝贵。\n\n提醒：它将以 \"PipePipe Beta\" 的形式安装，不会影响您当前的应用或数据。\n\n如果您遇到任何问题或有建议，请在我们的 GitHub 仓库提交 issue 告诉我们！</string>
 <string name="trending_replaced">YouTube 最近移除了热门视频功能，因此我们已将默认的 YouTube 热门标签页改为显示推荐直播。如果你不想看到此内容，可以在设置中移除该标签页，并将其他标签页设为你的首页。</string>
+<string name="youtube_login_warning_title">仅在需要时登录</string>
+<string name="youtube_login_warning_message">由于 YouTube 的加密机制，登录状态下播放仅提供 AVC 格式，无法下载纯音频，不支持回放正在直播中的直播流，并且提取稳定性更低。\n\n仅在以下情况下才应登录：\n1. 由于 IP 封锁，你无法匿名观看视频\n2. 你需要观看有年龄限制的视频\n3. 你是某个频道的会员，需要观看仅会员可见的视频\n\n如果在登录状态下视频提取或播放失败，请尝试退出登录并在 GitHub 上报告该问题。</string>
 </resources>
