@@ -11,14 +11,14 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "InfinityLoop1309.NewPipeEnhanced"
-        resValue "string", "app_name", "PipePipe"
+        applicationId "InfinityLoop1309.NewPipeEnhanced.Beta"
+        resValue "string", "app_name", "PipePipe Beta"
         minSdk 21
         //noinspection ExpiredTargetSdkVersion
         targetSdk 33
         versionCode 1098
         versionName "5.0.0"
-        archivesBaseName = 'PipePipe_' + versionName
+        archivesBaseName = 'PipePipe Beta_' + versionName
 
         multiDexEnabled true
 
@@ -36,9 +36,9 @@ android {
         abi {
             reset()
             enable true
-            universalApk true // If true, also generate a universal APK
-            include "armeabi-v7a", "arm64-v8a", "x86_64", "x86"
-//            include "arm64-v8a"
+            universalApk false // If true, also generate a universal APK
+//            include "armeabi-v7a", "arm64-v8a", "x86_64", "x86"
+            include "arm64-v8a"
         }
     }
     android.applicationVariants.all { variant ->
@@ -62,11 +62,11 @@ android {
             if (true) {
                 // default values when branch name could not be determined or is master or dev
                 applicationIdSuffix ".debug"
-                resValue "string", "app_name", "PipePipe Debug"
+                resValue "string", "app_name", "PipePipe Beta Debug"
             } else {
                 applicationIdSuffix ".debug." + normalizedWorkingBranch
-                resValue "string", "app_name", "PipePipe " + workingBranch
-                archivesBaseName = 'PipePipe_' + normalizedWorkingBranch
+                resValue "string", "app_name", "PipePipe Beta " + workingBranch
+                archivesBaseName = 'PipePipe Beta_' + normalizedWorkingBranch
             }
         }
 
@@ -76,8 +76,8 @@ android {
         release {
             if (System.properties.containsKey('packageSuffix')) {
                 applicationIdSuffix System.getProperty('packageSuffix')
-                resValue "string", "app_name", "PipePipe " + System.getProperty('packageSuffix')
-                archivesBaseName = 'PipePipe_' + System.getProperty('packageSuffix')
+                resValue "string", "app_name", "PipePipe Beta " + System.getProperty('packageSuffix')
+                archivesBaseName = 'PipePipe Beta_' + System.getProperty('packageSuffix')
             }
             minifyEnabled true
             shrinkResources false // disabled to fix F-Droid's reproducible build
@@ -215,7 +215,7 @@ dependencies {
     // name and the commit hash with the commit hash of the (pushed) commit you want to test
     // This works thanks to JitPack: https://jitpack.io/
     implementation 'com.github.TeamNewPipe:nanojson:1d9e1aea9049fc9f85e68b43ba39fe7be1c1f751'
-    implementation 'com.github.TeamNewPipe:NewPipeExtractor:6a858368c86bc9a55abee586eb6c733e86c26b97'
+    implementation 'com.github.whistlingwoods:PipePipeExtractor:v5.0.1'
 
 /** Checkstyle **/
     checkstyle "com.puppycrawl.tools:checkstyle:${checkstyleVersion}"
@@ -316,7 +316,7 @@ dependencies {
     implementation "com.jakewharton.rxbinding4:rxbinding:4.0.0"
 
     // Date and time formatting
-    implementation "org.ocpsoft.prettytime:prettytime:5.0.2.Final"
+    implementation "org.ocpsoft.prettytime:prettytime:5.0.9.Final"
 
 
 /** Debugging **/
