@@ -60,7 +60,7 @@ class Translator:
     def translate(self, content, language):
         extra_note = ""
         response = self.client.chat.completions.create(
-            model="gemini-3.1-pro-preview",
+            model="gpt-5",
             response_format={"type": "json_object"},
             messages=[
                 {
