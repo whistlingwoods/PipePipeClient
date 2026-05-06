@@ -749,5 +749,21 @@
     <string name="max_bullet_comments_rows_bottom_summary">Макс. строк для нижних комментариев</string>
     <string name="max_bullet_comments_rows_regular_summary">Макс. строк для обычных комментариев</string>
     <string name="bullet_comments_font_title">Шрифт комментариев</string>
-    
+    <string name="dont_auto_queue_long_title">Не добавлять длинные видео в автоочередь</string>
+    <string name="dont_auto_queue_long_description">Автоочередь только для видео до 6 мин</string>
+    <string name="auto_queue_partition_title">Всегда добавлять следующую часть</string>
+    <string name="auto_queue_partition_summary">Всегда добавлять следующую часть в очередь</string>
+    <string name="auto_background_play_title">Режим музыкального плеера</string>
+    <string name="auto_background_play_summary">Автоматически запускать видео в фоновом режиме при выборе в локальном плейлисте</string>
+    <string name="random_play_order_title">Случайный порядок</string>
+    <string name="random_play_order_summary">Автоматически перемешивать локальные плейлисты при воспроизведении в фоне</string>
+    <string name="exit_app_confirmation_message">Показывать уведомление «Нажмите ещё раз для выхода», чтобы избежать случайного закрытия</string>
+    <string name="exit_app_confirmation_title">Подтверждение выхода</string>
+    <string name="comments_inner_scroll_title">Внутренняя прокрутка комментариев</string>
+    <string name="comments_inner_scroll_summary">Не скрывать видео при просмотре комментариев</string>
+    <string name="fetch_full_playlist_title">Полная загрузка плейлиста</string>
+    <string name="fetch_full_playlist_summary">Загружать всё содержимое сразу при открытии плейлистов</string>
+    <string name="pull_to_refresh_title">Обновление жестом вниз</string>
+    <string name="pull_to_refresh_summary">Включить обновление ленты при оттягивании экрана вниз</string>
+    <string name="local_playlist_swipe_action_title">Свайп вправо в плейлистах</string>
 </resources>
