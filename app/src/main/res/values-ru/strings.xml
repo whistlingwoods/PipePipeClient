@@ -766,4 +766,15 @@
     <string name="pull_to_refresh_title">Обновление жестом вниз</string>
     <string name="pull_to_refresh_summary">Включить обновление ленты при оттягивании экрана вниз</string>
     <string name="local_playlist_swipe_action_title">Свайп вправо в плейлистах</string>
+    <string name="enable_eye_protection_summary">Отключить динамические темы и использовать режим защиты зрения для всех сервисов</string>
+    <string name="enable_eye_protection_title">Защита зрения</string>
+    <string name="feed_groups_grid_layout_title">Сетка в группах подписок</string>
+    <string name="feed_groups_grid_layout_summary">Отображать группы подписок сеткой вместо горизонтальной прокрутки</string>
+    <string name="grid_layout_title">Сетка</string>
+    <string name="grid_layout_summary">Отображать списки в несколько колонок вместо одной</string>
+    <string name="grid_columns_title">Количество столбцов</string>
+    <string name="grid_columns_landscape_title">Количество столбцов (ландшафт)</string>
+    <string name="always_list_mode_for_bookmark_title">Всегда использовать список для закладок</string>
+    <string name="auto_ellipsize_summary">Автоматически обрезать слишком длинные заголовки и комментарии</string>
+    <string name="auto_ellipsize_title">Автоматическое сокращение</string>
 </resources>
