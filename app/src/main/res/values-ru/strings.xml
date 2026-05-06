@@ -725,4 +725,16 @@
     <string name="delete_downloaded_files_confirm">Удалить все загруженные файлы\?</string>
     <string name="settings_category_player_notification_title">Уведомления плеера</string>
     <string name="enumeration_comma">,</string>
+    <string name="advanced_formats_title">Включить расширенные форматы</string>
+    <string name="advanced_formats_summary">Если ваше устройство поддерживает расширенные форматы, их включение поможет снизить потребление трафика и обеспечит более высокое разрешение. \nДля просмотра контента в 2K/4K на YouTube необходимо включить WEBM или AV1. \nИспользование формата, который не поддерживается вашим устройством, приведет к появлению черного экрана или сбою приложения</string>
+    <string name="require_audio_focus_title">Запрашивать аудиофокус</string>
+    <string name="require_audio_focus_summary">Воспроизводить звук только в PipePipe</string>
+    <string name="always_start_from_beginning_title">Всегда начинать с начала</string>
+    <string name="speeding_playback_title">Долгое нажатие для ускорения</string>
+    <string name="settings_category_gestures_summary">Настройки жестов</string>
+    <string name="fullscreen_gesture_control_title">Управление полноэкранным режимом</string>
+    <string name="fullscreen_gesture_control_summary">Использовать жесты для входа и выхода из полноэкранного режима</string>
+    <string name="swipe_seek_gesture_control_title">Перемотка свайпом</string>
+    <string name="swipe_seek_gesture_control_summary">Свайп вправо для перемотки вперёд, влево — назад</string>
+    
 </resources>
