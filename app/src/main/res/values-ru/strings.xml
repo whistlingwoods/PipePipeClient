@@ -777,4 +777,18 @@
     <string name="always_list_mode_for_bookmark_title">Всегда использовать список для закладок</string>
     <string name="auto_ellipsize_summary">Автоматически обрезать слишком длинные заголовки и комментарии</string>
     <string name="auto_ellipsize_title">Автоматическое сокращение</string>
+    <string name="show_auto_translated_subtitles_title">Автоматический перевод субтитров</string>
+    <string name="show_auto_translated_subtitles_summary">PipePipe попытается добавить дорожку с автопереводом на ваш основной язык. Это может немного замедлить загрузку видео.</string>
+    <string name="preferred_audio_language_title">Предпочтительный язык аудио</string>
+    <string name="show_dislike_title">Показывать количество дизлайков</string>
+    <string name="feed_toggle_show_future_items">Показывать предстоящие события</string>
+    <string name="search_suggestions_count_title">Количество подсказок поиска</string>
+    <string name="search_suggestions_count_summary">Сколько предыдущих запросов показывать в подсказках</string>
+    <string name="channel_tab_videos">Видео</string>
+    <string name="channel_tab_tracks">Треки</string>
+    <string name="channel_tab_livestreams">Трансляции</string>
+    <string name="channel_tab_playlists">Плейлисты</string>
+    <string name="channel_tab_channels">Каналы</string>
+    <string name="channel_tab_albums">Альбомы</string>
+    <string name="channel_tab_info">О канале</string>
 </resources>
