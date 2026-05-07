@@ -806,5 +806,7 @@
     <string name="high_res">Воспроизведение и загрузка (для премиум-контента / более высоких разрешений видео и качества аудио)</string>
     <string name="ai_subtitle">Получение сведений о потоке (для ИИ-субтитров)</string>
     <string name="cookie_functions_title">Управление доступом</string>
+    <string name="feed_fetch_channel_tabs">Загружать вкладки канала</string>
+    <string name="feed_fetch_channel_tabs_summary">Какие вкладки загружать при обновлении ленты. Этот параметр не влияет на обновление канала в быстром режиме.</string>
     
 </resources>
