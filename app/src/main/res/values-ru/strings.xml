@@ -808,5 +808,23 @@
     <string name="cookie_functions_title">Управление доступом</string>
     <string name="feed_fetch_channel_tabs">Загружать вкладки канала</string>
     <string name="feed_fetch_channel_tabs_summary">Какие вкладки загружать при обновлении ленты. Этот параметр не влияет на обновление канала в быстром режиме.</string>
-    
+    <string name="show_prerelease_description">Предварительные версии обновляются быстрее, но могут содержать ошибки</string>
+    <string name="show_prerelease_title">Показывать предварительные версии</string>
+    <string name="app_update_unavailable_toast">У вас установлена последняя версия PipePipe</string>
+    <string name="settings_category_backup_title">Резервная копия</string>
+    <string name="settings_category_filter_title">Фильтр контента</string>
+    <string name="settings_category_filter_title">Content Filter</string>
+    <string name="filter_by_keyword_title">Фильтр по ключевым словам</string>
+    <string name="filter_by_channel_title">Фильтр по каналам</string>
+    <string name="filter_by_keyword_summary">Добавьте ключевые слова, которые нужно скрывать, разделяя их запятыми</string>
+    <string name="filter_by_channel_summary">Добавьте названия каналов, которые нужно скрывать, разделяя их запятыми</string>
+    <string name="add_filter">Добавить фильтр</string>
+    <string name="no_filters">Нет фильтров</string>
+    <string name="filter_shorts_title">Фильтр коротких видео</string>
+    <string name="filter_shorts_summary">Скрывает короткие видео из результатов. Работает только для YouTube.</string>
+    <string name="filter_paid_contents_title">Фильтр платного контента</string>
+    <string name="filter_paid_contents_summary">Скрывает платный контент из результатов</string>
+    <string name="filter_field_summary">Применить фильтрацию для</string>
+    <string name="search_result">Результаты поиска</string>
+    <string name="recommended_videos">Рекомендованые видео</string>
 </resources>
