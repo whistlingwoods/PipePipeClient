@@ -102,9 +102,20 @@
     <string name="popup_remember_size_pos_summary">Помнить последние размер и позицию всплывающего окна</string>
     <string name="show_search_suggestions_title">Предложения поиска</string>
     <string name="best_resolution">Лучшее разрешение</string>
+    <!-- reCAPTCHA -->
     <string name="title_activity_recaptcha">Запрос reCAPTCHA</string>
     <string name="recaptcha_request_toast">Запрошен ввод reCAPTCHA</string>
     <string name="show_higher_resolutions_title">Высокие разрешения</string>
+    <string name="subtitle_activity_recaptcha">По завершении нажмите Готово</string>
+    <string name="recaptcha_done_button">Готово</string>
+    <!-- Downloads -->
+    <string name="settings_category_downloads_title">Загрузки</string>
+    <string name="settings_file_charset_title">Допустимые символы имён файлов</string>
+    <string name="settings_file_replacement_character_summary">Заменяет недопустимые символы</string>
+    <string name="settings_file_replacement_character_title">Символ для замены</string>
+    <string name="charset_letters_and_digits">Буквы и цифры</string>
+    <string name="charset_most_special_characters">Большинство спецсимволов</string>
+    <string name="toast_no_player">Приложение для воспроизведения этого файла не установлено</string>
     <!-- About -->
     <string name="title_activity_about_new">О приложении</string>
     <string name="title_activity_about">О NewPipe</string>
@@ -143,12 +154,11 @@
     <string name="resume_on_audio_focus_gain_summary">Возобновлять воспроизведение после перерывов (например, телефонных звонков)</string>
     <string name="notification_channel_name">Уведомление NewPipe</string>
     <string name="notification_channel_description">Уведомления для плеера NewPipe</string>
-    <string name="settings_category_downloads_title">Загрузки</string>
-    <string name="settings_file_charset_title">Допустимые символы имён файлов</string>
-    <string name="settings_file_replacement_character_summary">Заменяет недопустимые символы</string>&gt;
-    <string name="settings_file_replacement_character_title">Символ для замены</string>
-    <string name="charset_letters_and_digits">Буквы и цифры</string>
-    <string name="charset_most_special_characters">Большинство спецсимволов</string>
+    
+    
+    
+    
+    
     <string name="title_activity_history">История</string>
     <string name="action_history">История</string>
     <string name="settings_category_player_title">Плеер</string>
@@ -318,7 +328,6 @@
     <string name="preferred_open_action_settings_summary">При открытии ссылки на контент — %s</string>
     <string name="no_streams_available_download">Нет потоков для загрузки</string>
     <string name="caption_setting_title">Субтитры</string>
-    <string name="toast_no_player">Приложение для воспроизведения этого файла не установлено</string>
     <string name="caption_setting_description">Изменить размер текста и стиль субтитров. Нужен перезапуск</string>
     <string name="clear_views_history_title">Очистить историю</string>
     <string name="delete_view_history_alert">Удалить всю историю просмотров\?</string>
@@ -472,8 +481,6 @@
     <string name="permission_display_over_apps">Разрешите отображение поверх приложений</string>
     <string name="app_language_title">Язык интерфейса</string>
     <string name="systems_language">Как в системе</string>
-    <string name="subtitle_activity_recaptcha">По завершении нажмите Готово</string>
-    <string name="recaptcha_done_button">Готово</string>
     <string name="videos_string">Видео</string>
     <plurals name="seconds">
         <item quantity="one">%d секунда</item>
