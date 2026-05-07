@@ -105,6 +105,8 @@
     <string name="title_activity_recaptcha">Запрос reCAPTCHA</string>
     <string name="recaptcha_request_toast">Запрошен ввод reCAPTCHA</string>
     <string name="show_higher_resolutions_title">Высокие разрешения</string>
+    <!-- About -->
+    <string name="title_activity_about_new">О приложении</string>
     <string name="title_activity_about">О NewPipe</string>
     <string name="app_license_title">Лицензия NewPipe</string>
     <string name="tab_licenses">Лицензии</string>
@@ -112,10 +114,17 @@
     <string name="tab_about">О приложении</string>
     <string name="read_full_license">Прочитать лицензию</string>
     <string name="app_description">Свободный и легковесный потоковый плеер для Android.</string>
+    <string name="donation_title">Пожертвование</string>
+    <string name="donation_dialog_message">Поддержите нас на Ko-fi, чтобы просмотр видео оставался открытым и свободным от слежки.</string>
+    <string name="sponsor_promote">Поддержать на Ko-fi</string>
+    <string name="donation_encouragement">Разработчики NewPipe ценой своего свободного времени делают вашу жизнь чуть удобнее. Отплатите им тем же — наслаждаясь чашечкой кофе, они смогут сделать NewPipe ещё круче.</string>
+    <string name="give_back">Воздать должное</string>
     <string name="view_on_github">Открыть на GitHub</string>
     <string name="contribution_encouragement">Приветствуется всё — идеи, перевод, редизайн, чистка кода или огромные изменения в коде. Чем больше сделано, тем лучше!</string>
     <string name="copyright" formatted="true">© %1$s • %2$s • %3$s</string>
     <string name="contribution_title">Помощь проекту</string>
+
+    <string name="recommended_lives">Рекомендуемые трансляции</string>
     <string name="subscribe_button_title">Подписаться</string>
     <string name="subscription_change_failed">Не удалось изменить подписку</string>
     <string name="subscription_update_failed">Не удалось обновить подписку</string>
@@ -208,9 +217,6 @@
     <string name="external_player_unsupported_link_type">Внешние плееры не поддерживают эти типы ссылок</string>
     <string name="video_streams_empty">Видеопотоки не найдены</string>
     <string name="audio_streams_empty">Аудиопотоки не найдены</string>
-    <string name="donation_title">Пожертвование</string>
-    <string name="donation_encouragement">Разработчики NewPipe ценой своего свободного времени делают вашу жизнь чуть удобнее. Отплатите им тем же — наслаждаясь чашечкой кофе, они смогут сделать NewPipe ещё круче.</string>
-    <string name="give_back">Воздать должное</string>
     <string name="website_title">Веб-сайт</string>
     <string name="website_encouragement">Для получения более подробной информации и последних новостей о NewPipe посетите наш веб-сайт.</string>
     <string name="drawer_open">Открыть боковую панель</string>
@@ -901,4 +907,19 @@
         <item quantity="few">%d дня</item>
         <item quantity="other">%d дней</item>
     </plurals>
+    <!-- Channel tabs -->
+    <string name="channel_tab_videos">Видео</string>
+    <string name="channel_tab_tracks">Треки</string>
+    <string name="channel_tab_livestreams">Прямые трансляции</string>
+    <string name="channel_tab_shorts">Shorts</string>
+    <string name="channel_tab_playlists">Плейлисты</string>
+    <string name="channel_tab_channels">Каналы</string>
+    <string name="channel_tab_albums">Альбомы</string>
+    <string name="channel_tab_info">О канале</string>
+    <!-- Search settings -->
+    <string name="search_type">Тип поиска</string>
+    <string name="select_service">Выберите сервис</string>
+    <string name="perform_search">Начать поиск</string>
+    <string name="sortby">Сортировка</string>
+    
 </resources>
