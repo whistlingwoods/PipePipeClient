@@ -812,8 +812,8 @@
     <string name="show_prerelease_title">Показывать предварительные версии</string>
     <string name="app_update_unavailable_toast">У вас установлена последняя версия PipePipe</string>
     <string name="settings_category_backup_title">Резервная копия</string>
+    <!-- Content Filter settings -->
     <string name="settings_category_filter_title">Фильтр контента</string>
-    <string name="settings_category_filter_title">Content Filter</string>
     <string name="filter_by_keyword_title">Фильтр по ключевым словам</string>
     <string name="filter_by_channel_title">Фильтр по каналам</string>
     <string name="filter_by_keyword_summary">Добавьте ключевые слова, которые нужно скрывать, разделяя их запятыми</string>
@@ -827,4 +827,40 @@
     <string name="filter_field_summary">Применить фильтрацию для</string>
     <string name="search_result">Результаты поиска</string>
     <string name="recommended_videos">Рекомендованые видео</string>
+    <!-- SponsorBlock settings -->
+    <string name="sponsor_block_home_page_title">Открыть сайт</string>
+    <string name="sponsor_block_home_page_summary">Открыть официальный сайт SponsorBlock.</string>
+    <string name="sponsor_block_enable_title">Вкючить SponsorBlock</string>
+    <string name="sponsor_block_enable_summary">Автоматический пропуск рекламы в видео. Работает на YouTube и BiliBili.</string>
+    <string name="sponsor_block_show_manual_skip_summary">Показывать кнопки на экране для ручного пропуска/отмены пропуска сегментов. Рекомендуется включить, если категории SponsorBlock настроены на ручной пропуск.</string>
+    <string name="sponsor_block_graced_rewind_title">Перемотка приостанавливает пропуск</string>
+    <string name="sponsor_block_graced_rewind_summary">Перемотка назад к автоматически пропущенным сегментам приостановит пропуск до окончания сегмента.</string>
+    <string name="sponsor_block_notifications_title">Уведомлять о пропуске спонсоров</string>
+    <string name="sponsor_block_notifications_summary">Показывать всплывающее уведомление при автоматическом пропуске спонсора.</string>
+    <string name="settings_category_sponsor_block_categories_title">Категории SponsorBlock</string>
+    <string name="settings_category_sponsor_block_categories_summary">Настройте, какие сегменты видео пропускать, а также их цветовые метки на полосе прокрутки.</string>
+    <string name="settings_category_sponsor_block_categories_quick_actions">Быстрые действия</string>
+    <string name="settings_category_sponsor_block_categories_all_colors_on_title">Все включены</string>
+    <string name="settings_category_sponsor_block_categories_all_colors_off_title">Все выключены</string>
+    <string name="settings_category_sponsor_block_categories_reset_colors_title">Сбросить цвета</string>
+    <string name="sponsor_block_category_sponsor">Спонсор</string>
+    <string name="sponsor_block_category_intro">Интермедия/Вступительная анимация</string>
+    <string name="sponsor_block_category_outro">Финальные заставки/Титры</string>
+    <string name="sponsor_block_category_interaction">Напоминания о взаимодействии (подписка)</string>
+    <string name="sponsor_block_category_highlight">Ключевой момент</string>
+    <string name="sponsor_block_category_self_promo">Бесплатное/Собственное продвижение</string>
+    <string name="sponsor_block_category_non_music">Музыка: немузыкальный раздел</string>
+    <string name="sponsor_block_category_preview">Анонс/Повтор</string>
+    <string name="sponsor_block_category_filler">Отступления/Шутки</string>
+    <string name="settings_category_sponsor_block_category_sponsor_summary">Платная реклама, платные рефералы и прямые объявления. Не для самопродвижения или бесплатных упоминаний понравившихся авторов/сайтов/продуктов.</string>
+    <string name="settings_category_sponsor_block_category_intro_summary">Промежуток без реального контента. Может быть паузой, статичным кадром или повторяющейся анимацией. Не следует использовать для переходов с информацией или в музыкальных клипах.</string>
+    <string name="settings_category_sponsor_block_category_outro_summary">Титры или момент появления финальных заставок YouTube. Не для устных заключений. Не должно включать полезный контент. Не следует использовать в музыкальных клипах.</string>
+    <string name="settings_category_sponsor_block_category_interaction_summary">Короткое напоминание поставить лайк, подписаться или отслеживать канал в середине контента. Если оно длинное или касается чего-то конкретного, следует отнести его к самопродвижению.</string>
+    <string name="settings_category_sponsor_block_category_highlight_summary">Часть видео, которую большинство зрителей ищут. Похоже на комментарии вида «видео начинается с X»</string>
+    <string name="settings_category_sponsor_block_category_self_promo_summary">Похоже на «спонсора», но для бесплатного или собственного продвижения. Включает разделы о мерче, донатах или информацию о партнёрах.</string>
+    <string name="settings_category_sponsor_block_category_non_music_summary">Только для музыкальных клипов. Включает вступления и концовки в музыкальных клипах.</string>
+    <string name="settings_category_sponsor_block_category_preview_summary">Краткий повтор предыдущих эпизодов или анонс предстоящего в текущем видео. Предназначено для смонтированных фрагментов, а не для устных пересказов.</string>
+    <string name="settings_category_sponsor_block_category_filler_summary">Побочные сцены, добавленные исключительно для заполнения хронометража или юмора, не обязательные для понимания основного содержания видео.</string>
+    <string name="settings_category_sponsor_block_category_enable_mode_title">Режим пропуска</string>
+    
 </resources>
