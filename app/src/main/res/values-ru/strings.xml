@@ -910,7 +910,7 @@
     <!-- Channel tabs -->
     <string name="channel_tab_videos">Видео</string>
     <string name="channel_tab_tracks">Треки</string>
-    <string name="channel_tab_livestreams">Прямые трансляции</string>
+    <string name="channel_tab_livestreams">Трансляции</string>
     <string name="channel_tab_shorts">Shorts</string>
     <string name="channel_tab_playlists">Плейлисты</string>
     <string name="channel_tab_channels">Каналы</string>
