@@ -134,6 +134,13 @@
     <string name="contribution_encouragement">Приветствуется всё — идеи, перевод, редизайн, чистка кода или огромные изменения в коде. Чем больше сделано, тем лучше!</string>
     <string name="copyright" formatted="true">© %1$s • %2$s • %3$s</string>
     <string name="contribution_title">Помощь проекту</string>
+    <string name="app_description_new">Свободное Android-приложение для удобного и независимого просмотра YouTube, NicoNico и BiliBili </string>
+    <string name="view_on_codeberg">Открыть на Codeberg</string>
+    <string name="donation_encouragement_new">Я приложил все усилия, чтобы сделать приложение максимально удобным для вас, но у вас есть возможность сделать PipePipe ещё лучше, поддержав проект. Благодаря пожертвованиям я смогу уделять больше времени разработке и развитию проекта. </string>
+    <string name="website_title_new">Сайт проекта (оригинал)</string>
+    <string name="read_privacy_policy">Прочитать политику</string>
+    <string name="app_license">NewPipe — свободное программное обеспечение: вы можете использовать, изучать и улучшать его по своему усмотрению. В частности, вы можете распространять и/или изменять его в соответствии с условиями GNU General Public License, опубликованной Free Software Foundation, либо версии 3, либо (по вашему выбору) любой более поздней версии.</string>
+    
 
     <string name="recommended_lives">Рекомендуемые трансляции</string>
     <string name="subscribe_button_title">Подписаться</string>
@@ -338,13 +345,11 @@
     <string name="delete_search_history_alert">Удалить всю историю поиска\?</string>
     <string name="search_history_deleted">История поиска удалена</string>
     <string name="one_item_deleted">1 элемент удалён.</string>
-    <string name="app_license">NewPipe — свободное программное обеспечение: вы можете использовать, изучать и улучшать его по своему усмотрению. В частности, вы можете распространять и/или изменять его в соответствии с условиями GNU General Public License, опубликованной Free Software Foundation, либо версии 3, либо (по вашему выбору) любой более поздней версии.</string>
     <string name="preferred_open_action_settings_title">При открытии ссылки</string>
     <string name="import_settings">Хотите импортировать настройки?</string>
     <string name="privacy_policy_title">Конфиденциальность</string>
     <string name="privacy_policy_encouragement">Проект NewPipe очень серьёзно относится к вашей конфиденциальности. Приложение не собирает никаких данных без вашего согласия.
 \nПолитика конфиденциальности подробно объясняет, какие данные обрабатываются и хранятся при отправке отчёта о сбоях.</string>
-    <string name="read_privacy_policy">Прочитать политику</string>
     <string name="start_accept_privacy_policy">В соответствии с Общим регламентом по защите данных ЕС (GDPR), обращаем ваше внимание на политику конфиденциальности NewPipe. Пожалуйста, внимательно ознакомьтесь с ней.
 \nВам необходимо принять её условия, чтобы отправить нам отчёт об ошибке.</string>
     <string name="accept">Принять</string>
