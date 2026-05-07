@@ -1,23 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="main_bg_subtitle">Нажмите на лупу, чтобы начать.</string>
     <string name="upload_date_text">Опубликовано %1$s</string>
     <string name="no_player_found">Потоковый плеер не найден. Установить VLC?</string>
+    <string name="no_player_found_toast">Потоковый плеер не найден (можно установить VLC).</string>
     <string name="install">Установить</string>
+    <string name="yes">Да</string>
+    <string name="no">Неи</string>
+    <string name="ok">ОК</string>
     <string name="cancel">Отмена</string>
+    <string name="later">Потом</string>
     <string name="open_in_browser">Открыть в браузере</string>
+    <string name="mark_as_watched">Пометить как проигранные</string>
+    <string name="open_in_popup_mode">Открыть во всплывающем окне</string>
     <string name="share">Поделиться</string>
+    <string name="open_with">Открыть в</string>
     <string name="download">Скачать</string>
+    <string name="controls_download_desc">Скачать файл трансляции</string>
     <string name="search">Поиск</string>
     <string name="settings">Настройки</string>
     <string name="did_you_mean">Возможно, вы имели в виду \"%1$s\"\?</string>
+    <string name="search_showing_result_for">Результаты по запросу: %s</string>
     <string name="share_dialog_title">Поделиться</string>
+    <string name="use_external_video_player_title">Использовать внешний плеер</string>
+    <string name="use_external_video_player_summary">Убирает звук в некоторых разрешениях</string>
+    <string name="use_external_audio_player_title">Внешний аудиоплеер</string>
+    <string name="subscribe_button_title">Подписаться</string>
+    <string name="subscribed_button_title">Вы подписаны</string>
+    <string name="unsubscribe">Отписаться</string>
+    <string name="channel_unsubscribed">Подписка отменена</string>
+    <string name="subscription_change_failed">Не удалось изменить подписку</string>
+    <string name="subscription_update_failed">Не удалось обновить подписку</string>
+    <string name="show_info">Показать сведения</string>
+    <string name="tab_subscriptions">Подписки</string>
+    <string name="tab_bookmarks">Плейлисты</string>
+    <string name="tab_choose">Выберите вкладку</string>
+    <string name="back">Назад</string>
+    <string name="replies">Ответы</string>
+    <string name="controls_background_title">В фоне</string>
+    <string name="controls_popup_title">В окне</string>
+    <string name="download_path_summary">Путь для сохранения загруженных видео</string>
+    <string name="download_path_audio_title">Папка для загрузки аудио</string>
+    <string name="download_path_audio_summary">Сюда сохраняются скачанные аудиофайлы</string>
+    <string name="show_higher_resolutions_title">Высокие разрешения</string>
+    <string name="show_higher_resolutions_summary">Только некоторые устройства поддерживают видео в 2K/4K</string>
     <string name="download_path_title">Папка для скачанного видео</string>
     <string name="download_path_summary">Папка для скачанного видео</string>
     <string name="download_path_dialog_title">Введите путь к папке для скачивания видео</string>
     <string name="default_resolution_title">Разрешение по умолчанию</string>
     <string name="play_with_kodi_title">Воспроизвести в Kodi</string>
     <string name="kore_not_found">Приложение Kore не найдено, установить\?</string>
-    <string name="show_play_with_kodi_title">\"Воспроизвести в Kodi\"</string>
+    <string name="show_play_with_kodi_title">Опция \"Воспроизвести в Kodi\"</string>
     <string name="show_play_with_kodi_summary">Показать опцию воспроизведения через медиацентр Kodi</string>
     <string name="play_audio">Аудио</string>
     <string name="default_audio_format_title">Формат аудио по умолчанию</string>
@@ -32,7 +65,6 @@
     <string name="detail_dislikes_img_view_description">Не понравилось</string>
     <string name="detail_likes_img_view_description">Понравилось</string>
     <string name="use_external_video_player_title">Внешний видеоплеер</string>
-    <string name="use_external_audio_player_title">Внешний аудиоплеер</string>
     <string name="background_player_playing_toast">Фоновое воспроизведение</string>
     <string name="theme_title">Тема</string>
     <string name="dark_theme_title">Тёмная</string>
@@ -41,10 +73,9 @@
     <string name="download_path_audio_title">Папка для скачанного аудио</string>
     <string name="download_path_audio_summary">Папка для скачанного аудио</string>
     <string name="download_path_audio_dialog_title">Введите путь к папке для скачивания аудио</string>
-    <string name="main_bg_subtitle">Нажмите на лупу, чтобы начать.</string>
+    <string name="default_popup_resolution_title">Разрешение во всплывающем окне</string>
     <string name="msg_wait">Подождите…</string>
     <string name="msg_threads">Потоки</string>
-    <string name="ok">ОК</string>
     <string name="start">Начать</string>
     <string name="pause">Пауза</string>
     <string name="delete">Удалить</string>
@@ -79,9 +110,6 @@
     <string name="retry">Повтор</string>
     <string name="could_not_load_thumbnails">Не удалось загрузить все миниатюры</string>
     <string name="youtube_signature_deobfuscation_error">Не удалось расшифровать подпись URL у видео</string>
-    <string name="controls_background_title">В фоне</string>
-    <string name="controls_popup_title">В окне</string>
-    <string name="show_higher_resolutions_summary">Только некоторые устройства поддерживают видео в 2K/4K</string>
     <string name="default_video_format_title">Формат видео по умолчанию</string>
     <string name="black_theme_title">Чёрная</string>
     <string name="popup_remember_size_pos_title">Помнить параметры окна</string>
@@ -91,10 +119,9 @@
     <string name="info_labels">Что:\\nЗапрос:\\nЯзык контента:\\nСтрана контента:\\nЯзык приложения:\\nСервис:\\nВремя по Гринвичу:\\nПакет:\\nВерсия пакета:\\nВерсия ОС:</string>
     <string name="msg_popup_permission">Это разрешение нужно для
 \nвоспроизведения в окне</string>
-    <string name="open_in_popup_mode">Открыть во всплывающем окне</string>
+    
     <string name="show_search_suggestions_summary">Выберите отображаемые предложения поиска</string>
     <string name="disabled">Отключено</string>
-    <string name="use_external_video_player_summary">Убирает звук в некоторых разрешениях</string>
     <string name="short_million">млн</string>
     <string name="short_billion">млрд</string>
     <string name="short_thousand">тыс.</string>
@@ -105,7 +132,6 @@
     <!-- reCAPTCHA -->
     <string name="title_activity_recaptcha">Запрос reCAPTCHA</string>
     <string name="recaptcha_request_toast">Запрошен ввод reCAPTCHA</string>
-    <string name="show_higher_resolutions_title">Высокие разрешения</string>
     <string name="subtitle_activity_recaptcha">По завершении нажмите Готово</string>
     <string name="recaptcha_done_button">Готово</string>
     <!-- Downloads -->
@@ -235,6 +261,7 @@
     <string name="crash_the_app">Вызвать сбой приложения</string>
     <string name="show_error_snackbar">Показать ошибку снекбара</string>
     <string name="create_error_notification">Создать уведомление об ошибке</string>
+    <string name="crash_the_player">Вызвать сбой плеера</string>
     <!-- Subscriptions import/export -->
     <string name="import_title">Импорт</string>
     <string name="import_from">Импорт из</string>
@@ -404,13 +431,105 @@
     <string name="remove_watched_popup_yes_and_partially_watched_videos">Да, и частично просмотренные</string>
     <string name="new_seek_duration_toast">Из-за ограничений ExoPlayer точность перемотки составляет %d секунд</string>
     <!-- Time duration plurals -->
-    
-    <string name="recommended_lives">Рекомендуемые трансляции</string>
-    <string name="subscribe_button_title">Подписаться</string>
-    <string name="subscription_change_failed">Не удалось изменить подписку</string>
-    <string name="subscription_update_failed">Не удалось обновить подписку</string>
-    <string name="tab_subscriptions">Подписки</string>
+    <plurals name="seconds">
+        <item quantity="one">%d секунда</item>
+        <item quantity="few">%d секунды</item>
+        <item quantity="many">%d секунд</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%d минута</item>
+        <item quantity="few">%d минуты</item>
+        <item quantity="many">%d минут</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d часа</item>
+        <item quantity="many">%d часов</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="many">%d дней</item>
+    </plurals>
+    <!-- Feed -->
     <string name="fragment_feed_title">Что нового</string>
+    <string name="feed_groups_header_title">Группы каналов</string>
+    <string name="feed_oldest_subscription_update">Обновлено: %s</string>
+    <string name="feed_subscription_not_loaded_count">Не загружено: %d</string>
+    <string name="feed_notification_loading">Загрузка канала…</string>
+    <string name="feed_processing_message">Обработка канала…</string>
+    <string name="feed_new_items">Новое на канале</string>
+    <string name="feed_group_dialog_select_subscriptions">Выберите подписки</string>
+    <string name="feed_group_dialog_empty_selection">Подписки не выбраны</string>
+    <plurals name="feed_group_dialog_selection_count">
+        <item quantity="one">%d выбрана</item>
+        <item quantity="few">%d выбрано</item>
+        <item quantity="many">%d выбрано</item>
+        <item quantity="other">%d выбрано</item>
+    </plurals>
+    <string name="feed_group_dialog_empty_name">Введите имя группы</string>
+    <string name="feed_group_dialog_delete_message">Удалить эту группу\?</string>
+    <string name="feed_create_new_group_button_title">Создать</string>
+    <string name="feed_group_show_only_ungrouped_subscriptions">Только несгруппированные</string>
+    <string name="feed_update_threshold_title">Интервал обновления подписок</string>
+    <string name="settings_category_feed_title">Подписки</string>
+    <string name="feed_update_threshold_summary">Время после последнего обновления, по истечении которого подписка считается устаревшей — %s</string>
+    <string name="feed_update_threshold_option_always_update">Всегда обновлять</string>
+    <string name="feed_load_error">Ошибка загрузки подписок</string>
+    <string name="feed_load_error_account_info">Не удалось загрузить подписку \'%s\'.</string>
+    <string name="feed_load_error_terminated_new">Аккаунт автора был удалён.\nPipePipe больше не сможет загружать эту подписку.\nХотите отписаться от этого канала?</string>
+    <string name="feed_load_error_fast_unknown">В быстром режиме обновления подробности об этом не предоставляются.</string>
+    <string name="feed_use_dedicated_fetch_method_help_text_new">Вам кажется, что лента загружается слишком медленно? Если так, попробуйте включить быструю загрузку (это можно сделать в настройках или нажав кнопку ниже).
+\n
+\nPipePipe предлагает две стратегии загрузки ленты:
+\n• Полная загрузка каналов подписок: работает медленно, но предоставляет полные данные.
+\n• Использование выделенного источника: работает быстро, но обычно предоставляет неполную информацию.
+\n
+\nРазница заключается в том, что при быстром способе могут отсутствовать некоторые данные, например, длительность или тип видео (нельзя отличить трансляции от обычных роликов), а также может отображаться меньше элементов.
+\n
+\nПримером сервиса с поддержкой быстрого метода является YouTube с его RSS-лентой.
+\n
+\nТаким образом, выбор сводится к тому, что для вас важнее: скорость или точность информации.</string>
+    <string name="feed_toggle_show_played_items">Показать просмотренные</string>
+    <string name="feed_toggle_hide_played_items">Скрывать просмотренные</string>
+    <string name="feed_fetch_channel_tabs">Загружать вкладки канала</string>
+    <string name="feed_fetch_channel_tabs_summary">Какие вкладки загружать при обновлении ленты. Этот параметр не влияет на обновление канала в быстром режиме.</string>
+    <!-- SponsorBlock settings -->
+    <string name="sponsor_block_home_page_title">Открыть сайт</string>
+    <string name="sponsor_block_home_page_summary">Открыть официальный сайт SponsorBlock.</string>
+    <string name="sponsor_block_enable_title">Вкючить SponsorBlock</string>
+    <string name="sponsor_block_enable_summary">Автоматический пропуск рекламы в видео. Работает на YouTube и BiliBili.</string>
+    <string name="sponsor_block_show_manual_skip_summary">Показывать кнопки на экране для ручного пропуска/отмены пропуска сегментов. Рекомендуется включить, если категории SponsorBlock настроены на ручной пропуск.</string>
+    <string name="sponsor_block_graced_rewind_title">Перемотка приостанавливает пропуск</string>
+    <string name="sponsor_block_graced_rewind_summary">Перемотка назад к автоматически пропущенным сегментам приостановит пропуск до окончания сегмента.</string>
+    <string name="sponsor_block_notifications_title">Уведомлять о пропуске спонсоров</string>
+    <string name="sponsor_block_notifications_summary">Показывать всплывающее уведомление при автоматическом пропуске спонсора.</string>
+    <string name="settings_category_sponsor_block_categories_title">Категории SponsorBlock</string>
+    <string name="settings_category_sponsor_block_categories_summary">Настройте, какие сегменты видео пропускать, а также их цветовые метки на полосе прокрутки.</string>
+    <string name="settings_category_sponsor_block_categories_quick_actions">Быстрые действия</string>
+    <string name="settings_category_sponsor_block_categories_all_colors_on_title">Все включены</string>
+    <string name="settings_category_sponsor_block_categories_all_colors_off_title">Все выключены</string>
+    <string name="settings_category_sponsor_block_categories_reset_colors_title">Сбросить цвета</string>
+    <string name="sponsor_block_category_sponsor">Спонсор</string>
+    <string name="sponsor_block_category_intro">Интермедия/Вступительная анимация</string>
+    <string name="sponsor_block_category_outro">Финальные заставки/Титры</string>
+    <string name="sponsor_block_category_interaction">Напоминания о взаимодействии (подписка)</string>
+    <string name="sponsor_block_category_highlight">Ключевой момент</string>
+    <string name="sponsor_block_category_self_promo">Бесплатное/Собственное продвижение</string>
+    <string name="sponsor_block_category_non_music">Музыка: немузыкальный раздел</string>
+    <string name="sponsor_block_category_preview">Анонс/Повтор</string>
+    <string name="sponsor_block_category_filler">Отступления/Шутки</string>
+    <string name="settings_category_sponsor_block_category_sponsor_summary">Платная реклама, платные рефералы и прямые объявления. Не для самопродвижения или бесплатных упоминаний понравившихся авторов/сайтов/продуктов.</string>
+    <string name="settings_category_sponsor_block_category_intro_summary">Промежуток без реального контента. Может быть паузой, статичным кадром или повторяющейся анимацией. Не следует использовать для переходов с информацией или в музыкальных клипах.</string>
+    <string name="settings_category_sponsor_block_category_outro_summary">Титры или момент появления финальных заставок YouTube. Не для устных заключений. Не должно включать полезный контент. Не следует использовать в музыкальных клипах.</string>
+    <string name="settings_category_sponsor_block_category_interaction_summary">Короткое напоминание поставить лайк, подписаться или отслеживать канал в середине контента. Если оно длинное или касается чего-то конкретного, следует отнести его к самопродвижению.</string>
+    <string name="settings_category_sponsor_block_category_highlight_summary">Часть видео, которую большинство зрителей ищут. Похоже на комментарии вида «видео начинается с X»</string>
+    <string name="settings_category_sponsor_block_category_self_promo_summary">Похоже на «спонсора», но для бесплатного или собственного продвижения. Включает разделы о мерче, донатах или информацию о партнёрах.</string>
+    <string name="settings_category_sponsor_block_category_non_music_summary">Только для музыкальных клипов. Включает вступления и концовки в музыкальных клипах.</string>
+    <string name="settings_category_sponsor_block_category_preview_summary">Краткий повтор предыдущих эпизодов или анонс предстоящего в текущем видео. Предназначено для смонтированных фрагментов, а не для устных пересказов.</string>
+    <string name="settings_category_sponsor_block_category_filler_summary">Побочные сцены, добавленные исключительно для заполнения хронометража или юмора, не обязательные для понимания основного содержания видео.</string>
+    <string name="settings_category_sponsor_block_category_enable_mode_title">Режим пропуска</string>
+    <string name="recommended_lives">Рекомендуемые трансляции</string>
     <string name="enable_search_history_title">История поиска</string>
     <string name="enable_search_history_summary">Хранить запросы поиска (локально)</string>
     <string name="enable_watch_history_title">История просмотров</string>
@@ -425,11 +544,6 @@
     <string name="notification_channel_name">Уведомление NewPipe</string>
     <string name="notification_channel_description">Уведомления для плеера NewPipe</string>
     <string name="error_http_unsupported_range">Сервер не принимает многопоточные загрузки, повторная попытка с @string/msg_threads = 1</string>
-    
-    
-    
-    
-
     <string name="settings_category_player_title">Плеер</string>
     <string name="settings_category_player_behavior_title">Поведение</string>
     <string name="settings_category_history_title">История и кэш</string>
@@ -463,9 +577,7 @@
     <string name="player_stream_failure">Не удалось воспроизвести этот поток</string>
     <string name="play_queue_stream_detail">Сведения</string>
     <string name="play_queue_audio_settings">Настройки звука</string>
-    <string name="play_queue_remove">Удалить</string>
-    <string name="subscribed_button_title">Вы подписаны</string>
-    <string name="channel_unsubscribed">Подписка отменена</string>
+    <string name="play_queue_remove">Удалить</string> 
     <string name="show_hold_to_append_title">\"Зажмите, чтобы добавить\"</string>
     <string name="show_hold_to_append_summary">Показать подсказку при нажатии \"В окне\" или \"В фоне\" на странице сведений о видео</string>
     <string name="unknown_content">[Неизвестно]</string>
@@ -473,7 +585,6 @@
     <string name="hold_to_append">Зажмите, чтобы добавить в очередь</string>
     <string name="start_here_on_background">Играть отсюда в фоне</string>
     <string name="start_here_on_popup">Играть отсюда в окне</string>
-    <string name="no_player_found_toast">Потоковый плеер не найден (можно установить VLC).</string>
     <string name="default_content_country_title">Страна контента по умолчанию</string>
     <string name="always">Всегда</string>
     <string name="just_once">Только сейчас</string>
@@ -486,9 +597,6 @@
     <string name="audio_streams_empty">Аудиопотоки не найдены</string>
     <string name="website_title">Веб-сайт</string>
     <string name="website_encouragement">Для получения более подробной информации и последних новостей о NewPipe посетите наш веб-сайт.</string>
-    <string name="controls_download_desc">Скачать файл трансляции</string>
-    <string name="show_info">Показать сведения</string>
-    <string name="tab_bookmarks">Плейлисты</string>
     <string name="auto_queue_title">Автодополнение очереди</string>
     <string name="auto_queue_summary">Добавлять похожие потоки в очередь при воспроизведении последнего потока, если не включён повтор</string>
     <string name="settings_category_debug_title">Отладка</string>
@@ -496,24 +604,12 @@
     <!-- Data backup settings -->
     <string name="settings_category_backup_title">Резервная копия</string>
     <string name="import_data_title">Импорт данных</string>
-
-    
-    
-
-    
-    
     <string name="detail_drag_description">Перетащите, чтобы изменить порядок</string>
     <string name="create">Создать</string>
     <string name="dismiss">Скрыть</string>
     <string name="rename">Переименовать</string>
     <string name="add_to_playlist">В плейлист</string>
     <string name="playlist_thumbnail_change_success">Миниатюра плейлиста изменена.</string>
-    
-    
-    
-    
-    
-    
     <string name="import_network_expensive_warning">Это действие может вызвать большой расход трафика.
 \n
 \nПродолжить?</string>
@@ -522,8 +618,6 @@
     <string name="thumbnail_cache_wipe_complete_notice">Кэш изображений очищен</string>
     <string name="metadata_cache_wipe_title">Очистить кэш метаданных</string>
     <string name="metadata_cache_wipe_complete_notice">Кэш метаданных очищен</string>
-    
-    
     <string name="unhook_checkbox">Независимо (искажения)</string>
     <string name="metadata_cache_wipe_summary">Удалить все загруженные данные веб-страниц</string>
     <string name="no_streams_available_download">Нет потоков для загрузки</string>
@@ -543,9 +637,6 @@
     <string name="playlists">Плейлисты</string>
     <string name="tracks">Треки</string>
     <string name="users">Пользователи</string>
-    
-    
-    
     <string name="brightness_gesture_control_summary">Менять яркость плеера жестом</string>
     <string name="brightness_gesture_control_title">Жест яркости</string>
     <string name="download_to_sdcard_error_message">Загрузка на SD-карту невозможна. Сбросить расположение папки загрузки\?</string>
@@ -554,42 +645,22 @@
     <string name="restore_defaults_confirmation">Восстановить значения по умолчанию\?</string>
     <string name="saved_tabs_invalid_json">Ошибка чтения сохранённых вкладок. Используются вкладки по умолчанию</string>
     <string name="subscribers_count_not_available">Количество подписчиков недоступно</string>
-    <string name="tab_choose">Выберите вкладку</string>
-    <string name="unsubscribe">Отписаться</string>
     <string name="volume_gesture_control_summary">Менять громкость плеера жестом</string>
     <string name="volume_gesture_control_title">Жест громкости</string>
     <string name="settings_category_updates_title">Обновления</string>
     <string name="file_deleted">Файл удалён</string>
     <string name="app_update_notification_channel_name">Уведомление об обновлении приложения</string>
     <string name="app_update_notification_channel_description">Уведомления о новых версиях NewPipe</string>
-    
-    
     <string name="app_update_notification_content_title">Доступно обновление NewPipe!</string>
-    
-    
-    
     <string name="events">События</string>
-    
     <string name="missions_header_pending">В очереди</string>
-    
-    
     <string name="show_comments_title">Показать комментарии</string>
     <string name="show_comments_summary">Отключите, чтобы скрыть комментарии</string>
     <string name="autoplay_title">Автовоспроизведение</string>
     <string name="no_comments">Нет комментариев</string>
     <string name="watch_history_states_deleted">Позиции воспроизведения удалены</string>
     <string name="missing_file">Файл перемещён или удалён</string>
-    
-    
     <string name="error_postprocessing_stopped">NewPipe была закрыта во время работы над файлом</string>
-    
-    
-    
-    
-    
-    
-    
-    
     <string name="clear_playback_states_title">Очистить позиции воспроизведения</string>
     <string name="clear_playback_states_summary">Удалить все позиции воспроизведения</string>
     <string name="delete_playback_states_alert">Удалить все позиции воспроизведения\?</string>
@@ -615,57 +686,13 @@
     <string name="peertube_instance_add_fail">Не удалось проверить сервер</string>
     <string name="peertube_instance_add_https_only">Поддерживается только HTTPS</string>
     <string name="peertube_instance_add_exists">Сервер уже существует</string>
-    
-    
-    
-    
     <string name="permission_display_over_apps">Разрешите отображение поверх приложений</string>
-    
-    
     <string name="videos_string">Видео</string>
-    <plurals name="seconds">
-        <item quantity="one">%d секунда</item>
-        <item quantity="few">%d секунды</item>
-        <item quantity="many">%d секунд</item>
-    </plurals>
-    
     <string name="help">Помощь</string>
-    <string name="feed_group_dialog_empty_name">Введите имя группы</string>
-    <plurals name="feed_group_dialog_selection_count">
-        <item quantity="one">%d выбрана</item>
-        <item quantity="few">%d выбрано</item>
-        <item quantity="many">%d выбрано</item>
-        <item quantity="other">%d выбрано</item>
-    </plurals>
-    <string name="feed_group_dialog_select_subscriptions">Выберите подписки</string>
-    <string name="feed_oldest_subscription_update">Обновлено: %s</string>
-    <plurals name="days">
-        <item quantity="one">%d день</item>
-        <item quantity="few">%d дня</item>
-        <item quantity="many">%d дней</item>
-    </plurals>
-    <plurals name="hours">
-        <item quantity="one">%d час</item>
-        <item quantity="few">%d часа</item>
-        <item quantity="many">%d часов</item>
-    </plurals>
-    <plurals name="minutes">
-        <item quantity="one">%d минута</item>
-        <item quantity="few">%d минуты</item>
-        <item quantity="many">%d минут</item>
-    </plurals>
-    <string name="feed_group_dialog_delete_message">Удалить эту группу\?</string>
-    <string name="feed_subscription_not_loaded_count">Не загружено: %d</string>
-    <string name="feed_create_new_group_button_title">Создать</string>
     <string name="feed_use_dedicated_fetch_method_disable_button">Обычный режим</string>
     <string name="feed_use_dedicated_fetch_method_enable_button">Быстрый режим</string>
-    <string name="feed_update_threshold_title">Интервал обновления подписок</string>
-    <string name="settings_category_feed_title">Подписки</string>
-    <string name="feed_processing_message">Обработка канала…</string>
     <string name="feed_notification_loading">Загрузка канала…</string>
     <string name="feed_update_threshold_option_always_update">Обновлять всегда</string>
-    <string name="feed_group_dialog_empty_selection">Подписки не выбраны</string>
-    <string name="feed_groups_header_title">Группы каналов</string>
     <string name="feed_use_dedicated_fetch_method_help_text">Если подписки обновляются слишком медленно, попробуйте быстрый режим (включите в настройках или кнопкой внизу).
 \n
 \nNewPipe может обновлять подписки двумя способами:
@@ -691,22 +718,15 @@
     <string name="songs">Треки</string>
     <string name="artists">Исполнители</string>
     <string name="albums">Альбомы</string>
-    
-    
-    
-    
     <string name="youtube_restricted_mode_enabled_title">\"Безопасный режим\" YouTube</string>
     <string name="video_detail_by">От %s</string>
     <string name="channel_created_by">Создано %s</string>
     <string name="detail_sub_channel_thumbnail_view_description">Миниатюра значка канала</string>
-    <string name="feed_group_show_only_ungrouped_subscriptions">Только несгруппированные</string>
     <string name="error_report_open_github_notice">Проверьте, не открыта ли уже проблема по этой ошибке. Дубликаты впустую тратят наше время, отвлекая от реальных задач.</string>
     <string name="search_showing_result_for">Результаты для: %s</string>
     <string name="playlist_page_summary">Страница плейлиста</string>
     <string name="error_report_open_issue_button_text">Сообщить на GitHub</string>
     <string name="copy_for_github">Копировать Markdown</string>
-    
-    
     <string name="title_activity_play_queue">Очередь воспроизведения</string>
     <string name="unsupported_url_dialog_message">Не удалось распознать URL. Открыть в другом приложении\?</string>
     <string name="auto_queue_toggle">Авто-очередь</string>
@@ -750,7 +770,7 @@
     <string name="comments_tab_description">Комментарии</string>
     <string name="show_description_summary">Отключите, чтобы скрыть описание видео и дополнительные сведения</string>
     <string name="show_description_title">Показать описание</string>
-    <string name="open_with">Открыть в</string>
+    
     <string name="no_app_to_open_intent">Подходящее приложение не найдено</string>
     <string name="paid_content">Этот контент доступен только оплатившим его пользователям, поэтому NewPipe не может воспроизвести или загрузить его.</string>
     <string name="youtube_music_premium_content">Это видео доступно только для пользователей YouTube Music Premium, поэтому NewPipe не может воспроизвести или загрузить его.</string>
@@ -784,38 +804,29 @@
     <string name="metadata_thumbnail_url">URL миниатюры</string>
     <string name="metadata_host">Сервер</string>
     <string name="metadata_privacy">Доступность</string>
-    <string name="feed_load_error_fast_unknown">В быстром режиме обновления подробности об этом не предоставляются.</string>
+    
     <string name="feed_load_error_terminated">Аккаунт автора отключён.
 \nNewPipe не сможет загружать эту подписку в будущем.
 \nОтписаться от этого канала\?</string>
-    <string name="feed_load_error_account_info">Не удалось загрузить подписку \'%s\'.</string>
-    <string name="feed_load_error">Ошибка загрузки подписки</string>
+    
+    
     <string name="open_website_license">Открыть веб-сайт</string>
     <string name="service_provides_reason">%s указывает следующую причину:</string>
     <string name="account_terminated">Аккаунт отключён</string>
-    
-    
     <string name="no_dir_yet">Папка для загрузки ещё не выбрана, укажите папку для загрузки сейчас</string>
     <string name="off">Отключить</string>
     <string name="on">Включить</string>
     <string name="tablet_mode_title">Режим планшета</string>
-    <string name="feed_toggle_show_played_items">Показать проигранные</string>
-    <string name="comments_are_disabled">Комментарии отключены</string>
     
+    <string name="comments_are_disabled">Комментарии отключены</string>
     <string name="detail_heart_img_view_description">Автору видео понравилось это</string>
-    <string name="mark_as_watched">Пометить как проигранные</string>
+    
     <string name="remote_search_suggestions">Серверные предложения поиска</string>
     <string name="local_search_suggestions">Локальные предложения поиска</string>
-    
-    
     <string name="start_main_player_fullscreen_summary">Запускать видео во весь экран, если отключён автоповорот. Мини-плеер доступен при выходе из полноэкранного режима</string>
     <string name="start_main_player_fullscreen_title">Начинать просмотр в полноэкранном режиме</string>
     <string name="enqueued_next">Добавлено следующим</string>
     <string name="enqueue_next_stream">Добавить следующим</string>
-    
-    
-    
-    <string name="feed_new_items">Новое на канале</string>
     <string name="notifications">Уведомления</string>
     <string name="streams_notification_channel_name">Новые видео</string>
     <string name="streams_notification_channel_description">Уведомления о новых видео в подписках</string>
@@ -825,7 +836,6 @@
     <string name="get_notified">Уведомлять</string>
     <string name="you_successfully_subscribed">Вы подписались на канал</string>
     <string name="toggle_all">Переключить все</string>
-    <string name="crash_the_player">Вызвать сбой плеера</string>
     <string name="error_report_channel_name">Уведомление отчёта об ошибке</string>
     <string name="error_report_channel_description">Уведомления для отчётов об ошибках</string>
     <string name="error_report_notification_title">NewPipe столкнулся с ошибкой, нажмите для отчёта</string>
@@ -838,7 +848,6 @@
     <string name="progressive_load_interval_exoplayer_default">Стандартное значение ExoPlayer</string>
     <string name="progressive_load_interval_summary">Изменить размер интервала загрузки (сейчас %s). Меньшее значение может ускорить начальную загрузку видео. Изменение значения потребует перезапуска плеера.</string>
     <string name="loading_stream_details">Загрузка деталей трансляции…</string>
-    
     <string name="settings_category_player_notification_title">Уведомления плеера</string>
     <string name="enumeration_comma">,</string>
     <string name="advanced_formats_title">Включить расширенные форматы</string>
@@ -926,11 +935,8 @@
     <string name="high_res">Воспроизведение и загрузка (для премиум-контента / более высоких разрешений видео и качества аудио)</string>
     <string name="ai_subtitle">Получение сведений о потоке (для ИИ-субтитров)</string>
     <string name="cookie_functions_title">Управление доступом</string>
-    <string name="feed_fetch_channel_tabs">Загружать вкладки канала</string>
-    <string name="feed_fetch_channel_tabs_summary">Какие вкладки загружать при обновлении ленты. Этот параметр не влияет на обновление канала в быстром режиме.</string>
     <string name="show_prerelease_description">Предварительные версии обновляются быстрее, но могут содержать ошибки</string>
     <string name="show_prerelease_title">Показывать предварительные версии</string>pfvtyt
-    
     <!-- Content Filter settings -->
     <string name="settings_category_filter_title">Фильтр контента</string>
     <string name="filter_by_keyword_title">Фильтр по ключевым словам</string>
@@ -946,41 +952,6 @@
     <string name="filter_field_summary">Применить фильтрацию для</string>
     <string name="search_result">Результаты поиска</string>
     <string name="recommended_videos">Рекомендованые видео</string>
-    <!-- SponsorBlock settings -->
-    <string name="sponsor_block_home_page_title">Открыть сайт</string>
-    <string name="sponsor_block_home_page_summary">Открыть официальный сайт SponsorBlock.</string>
-    <string name="sponsor_block_enable_title">Вкючить SponsorBlock</string>
-    <string name="sponsor_block_enable_summary">Автоматический пропуск рекламы в видео. Работает на YouTube и BiliBili.</string>
-    <string name="sponsor_block_show_manual_skip_summary">Показывать кнопки на экране для ручного пропуска/отмены пропуска сегментов. Рекомендуется включить, если категории SponsorBlock настроены на ручной пропуск.</string>
-    <string name="sponsor_block_graced_rewind_title">Перемотка приостанавливает пропуск</string>
-    <string name="sponsor_block_graced_rewind_summary">Перемотка назад к автоматически пропущенным сегментам приостановит пропуск до окончания сегмента.</string>
-    <string name="sponsor_block_notifications_title">Уведомлять о пропуске спонсоров</string>
-    <string name="sponsor_block_notifications_summary">Показывать всплывающее уведомление при автоматическом пропуске спонсора.</string>
-    <string name="settings_category_sponsor_block_categories_title">Категории SponsorBlock</string>
-    <string name="settings_category_sponsor_block_categories_summary">Настройте, какие сегменты видео пропускать, а также их цветовые метки на полосе прокрутки.</string>
-    <string name="settings_category_sponsor_block_categories_quick_actions">Быстрые действия</string>
-    <string name="settings_category_sponsor_block_categories_all_colors_on_title">Все включены</string>
-    <string name="settings_category_sponsor_block_categories_all_colors_off_title">Все выключены</string>
-    <string name="settings_category_sponsor_block_categories_reset_colors_title">Сбросить цвета</string>
-    <string name="sponsor_block_category_sponsor">Спонсор</string>
-    <string name="sponsor_block_category_intro">Интермедия/Вступительная анимация</string>
-    <string name="sponsor_block_category_outro">Финальные заставки/Титры</string>
-    <string name="sponsor_block_category_interaction">Напоминания о взаимодействии (подписка)</string>
-    <string name="sponsor_block_category_highlight">Ключевой момент</string>
-    <string name="sponsor_block_category_self_promo">Бесплатное/Собственное продвижение</string>
-    <string name="sponsor_block_category_non_music">Музыка: немузыкальный раздел</string>
-    <string name="sponsor_block_category_preview">Анонс/Повтор</string>
-    <string name="sponsor_block_category_filler">Отступления/Шутки</string>
-    <string name="settings_category_sponsor_block_category_sponsor_summary">Платная реклама, платные рефералы и прямые объявления. Не для самопродвижения или бесплатных упоминаний понравившихся авторов/сайтов/продуктов.</string>
-    <string name="settings_category_sponsor_block_category_intro_summary">Промежуток без реального контента. Может быть паузой, статичным кадром или повторяющейся анимацией. Не следует использовать для переходов с информацией или в музыкальных клипах.</string>
-    <string name="settings_category_sponsor_block_category_outro_summary">Титры или момент появления финальных заставок YouTube. Не для устных заключений. Не должно включать полезный контент. Не следует использовать в музыкальных клипах.</string>
-    <string name="settings_category_sponsor_block_category_interaction_summary">Короткое напоминание поставить лайк, подписаться или отслеживать канал в середине контента. Если оно длинное или касается чего-то конкретного, следует отнести его к самопродвижению.</string>
-    <string name="settings_category_sponsor_block_category_highlight_summary">Часть видео, которую большинство зрителей ищут. Похоже на комментарии вида «видео начинается с X»</string>
-    <string name="settings_category_sponsor_block_category_self_promo_summary">Похоже на «спонсора», но для бесплатного или собственного продвижения. Включает разделы о мерче, донатах или информацию о партнёрах.</string>
-    <string name="settings_category_sponsor_block_category_non_music_summary">Только для музыкальных клипов. Включает вступления и концовки в музыкальных клипах.</string>
-    <string name="settings_category_sponsor_block_category_preview_summary">Краткий повтор предыдущих эпизодов или анонс предстоящего в текущем видео. Предназначено для смонтированных фрагментов, а не для устных пересказов.</string>
-    <string name="settings_category_sponsor_block_category_filler_summary">Побочные сцены, добавленные исключительно для заполнения хронометража или юмора, не обязательные для понимания основного содержания видео.</string>
-    <string name="settings_category_sponsor_block_category_enable_mode_title">Режим пропуска</string>
     <!-- Advanced settings -->
     <string name="settings_category_advanced_title">Дополнительно</string>
     <string name="use_inexact_seek_title">Быстрый поиск позиции</string>
