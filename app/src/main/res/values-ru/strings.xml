@@ -224,12 +224,12 @@
     <string name="show_info">Показать сведения</string>
     <string name="tab_bookmarks">Плейлисты</string>
     <string name="controls_add_to_playlist_title">В плейлист</string>
-    <string name="use_inexact_seek_title">Быстрый поиск позиции</string>
-    <string name="use_inexact_seek_summary">Выполняется быстрее, но менее точно. Не работает для перемотки на 5, 15 или 25 секунд</string>
     <string name="auto_queue_title">Автодополнение очереди</string>
     <string name="auto_queue_summary">Добавлять похожие потоки в очередь при воспроизведении последнего потока, если не включён повтор</string>
     <string name="settings_category_debug_title">Отладка</string>
     <string name="file">Файл</string>
+    <!-- Data backup settings -->
+    <string name="settings_category_backup_title">Резервная копия</string>
     <string name="import_data_title">Импорт данных</string>
     <string name="export_data_title">Экспорт данных</string>
     <string name="import_data_summary">Текущие подписки, плейлисты, история и (опционально) настройки будут заменены</string>
@@ -239,6 +239,7 @@
     <string name="invalid_file">Файл не существует или нет разрешения на его чтение или запись</string>
     <string name="file_name_empty_error">Имя файла не может быть пустым</string>
     <string name="error_occurred_detail">Произошла ошибка: %1$s</string>
+    
     <string name="detail_drag_description">Перетащите, чтобы изменить порядок</string>
     <string name="create">Создать</string>
     <string name="dismiss">Скрыть</string>
@@ -791,13 +792,17 @@
     <string name="channel_tab_channels">Каналы</string>
     <string name="channel_tab_albums">Альбомы</string>
     <string name="channel_tab_info">О канале</string>
+    <!-- Account settings -->
     <string name="account">Аккаунт</string>
     <string name="settings_category_niconico_account_title">Аккаунт NicoNico</string>
     <string name="settings_category_bilibili_account_title">Аккаунт BiliBili</string>
     <string name="settings_category_youtube_account_title">Аккаунт YouTube</string>
     <string name="login_warning">Токены будут использоваться только при необходимости</string>
     <string name="login_title">Войти</string>
+    <string name="youtube_login_warning_title">Входите в аккаунт только при необходимости</string>
     <string name="logout_title">Выйти</string>
+    <string name="youtube_account_temporarily_disabled">Временно отключено</string>
+    <string name="youtube_login_warning_message">Из-за шифрования YouTube авторизованное воспроизведение поддерживает только форматы AVC, загрузка только аудио недоступна, текущие прямые трансляции нельзя перемотать назад, а извлечение менее стабильно. \n\nВходите в аккаунт только если:\n1. Вы не можете смотреть видео анонимно из-за блокировки по IP\n2. Вам нужно смотреть видео с возрастными ограничениями\n3. Вы являетесь участником канала и вам нужно смотреть видео только для участников\n\nЕсли извлечение видео или воспроизведение не работает при входе в аккаунт, попробуйте выйти и сообщите о проблеме на GitHub.</string>
     <string name="clear_webview_cookies">Очистить cookies в WebView</string>
     <string name="clear_webview_cookies_summary">Удалить все cookies, сохраненные компонентами WebView, чтобы можно было войти в другой аккаунт</string>
     <string name="override_cookies_summary">Использовать введенные вручную cookies вместо сохраненных учетных данных</string>
@@ -809,9 +814,8 @@
     <string name="feed_fetch_channel_tabs">Загружать вкладки канала</string>
     <string name="feed_fetch_channel_tabs_summary">Какие вкладки загружать при обновлении ленты. Этот параметр не влияет на обновление канала в быстром режиме.</string>
     <string name="show_prerelease_description">Предварительные версии обновляются быстрее, но могут содержать ошибки</string>
-    <string name="show_prerelease_title">Показывать предварительные версии</string>
+    <string name="show_prerelease_title">Показывать предварительные версии</string>pfvtyt
     <string name="app_update_unavailable_toast">У вас установлена последняя версия PipePipe</string>
-    <string name="settings_category_backup_title">Резервная копия</string>
     <!-- Content Filter settings -->
     <string name="settings_category_filter_title">Фильтр контента</string>
     <string name="filter_by_keyword_title">Фильтр по ключевым словам</string>
@@ -862,5 +866,39 @@
     <string name="settings_category_sponsor_block_category_preview_summary">Краткий повтор предыдущих эпизодов или анонс предстоящего в текущем видео. Предназначено для смонтированных фрагментов, а не для устных пересказов.</string>
     <string name="settings_category_sponsor_block_category_filler_summary">Побочные сцены, добавленные исключительно для заполнения хронометража или юмора, не обязательные для понимания основного содержания видео.</string>
     <string name="settings_category_sponsor_block_category_enable_mode_title">Режим пропуска</string>
-    
+    <!-- Advanced settings -->
+    <string name="settings_category_advanced_title">Дополнительно</string>
+    <string name="use_inexact_seek_title">Быстрый поиск позиции</string>
+    <string name="use_inexact_seek_summary">Выполняется быстрее, но менее точно. Не работает для перемотки на 5, 15 или 25 секунд</string>
+    <string name="loading_timeout_title">Тайм-аут загрузки видео</string>
+    <string name="loading_timeout_description">Задайте максимальное время ожидания загрузки информации о видео. Если загрузка не завершится в течение этого времени, запрос будет отменён и отобразится сообщение об ошибке.</string>
+    <string name="settings_category_exoplayer_title">Настройки ExoPlayer</string>
+    <string name="settings_category_exoplayer_summary">Управление настройками ExoPlayer. Для применения изменений необходим перезапуск плеера</string>
+    <string name="progressive_load_interval_title">Размер интервала загрузки воспроизведения</string>
+    <string name="progressive_load_interval_summary">Изменить размер интервала загрузки (текущее значение: %s). Меньшее значение может ускорить начальную загрузку видео. Требуется перезапуск плеера</string>
+    <string name="always_use_exoplayer_set_output_surface_workaround_title">Всегда использовать обходной путь ExoPlayer для вывода видео</string>
+<string name="always_use_exoplayer_set_output_surface_workaround_summary">Этот метод пересоздает видеодекодеры при смене экрана вместо прямой передачи поверхности кодеку. ExoPlayer уже использует это на некоторых проблемных устройствах; настройка работает только на Android 6 и выше.\n\nВключение может предотвратить ошибки при переключении плеера или переходе в полноэкранный режим.</string>
+    <string name="disable_android_auto_title">Отключить Android Auto</string>
+<string name="disable_android_auto_summary">Отключает соединение с Android Auto для предотвращения проблем с уведомлениями на Android 12 и старше.\n\nПосле повторного включения необходимо перезапустить приложение и заново подключиться к автомобилю, чтобы изменения вступили в силу.</string>
+    <!-- Time duration plurals -->
+    <plurals name="seconds">
+        <item quantity="one">%d секунда</item>
+        <item quantity="few">%d секунды</item>
+       <item quantity="other">%d секунд</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%d минута</item>
+        <item quantity="few">%d минуты</item>
+        <item quantity="other">%d минут</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d часа</item>
+        <item quantity="other">%d часов</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="other">%d дней</item>
+    </plurals>
 </resources>
