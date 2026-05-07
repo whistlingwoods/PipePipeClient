@@ -791,4 +791,20 @@
     <string name="channel_tab_channels">Каналы</string>
     <string name="channel_tab_albums">Альбомы</string>
     <string name="channel_tab_info">О канале</string>
+    <string name="account">Аккаунт</string>
+    <string name="settings_category_niconico_account_title">Аккаунт NicoNico</string>
+    <string name="settings_category_bilibili_account_title">Аккаунт BiliBili</string>
+    <string name="settings_category_youtube_account_title">Аккаунт YouTube</string>
+    <string name="login_warning">Токены будут использоваться только при необходимости</string>
+    <string name="login_title">Войти</string>
+    <string name="logout_title">Выйти</string>
+    <string name="clear_webview_cookies">Очистить cookies в WebView</string>
+    <string name="clear_webview_cookies_summary">Удалить все cookies, сохраненные компонентами WebView, чтобы можно было войти в другой аккаунт</string>
+    <string name="override_cookies_summary">Использовать введенные вручную cookies вместо сохраненных учетных данных</string>
+    <string name="override_cookies_title">Переопределить cookies</string>
+    <string name="override_cookies_value_title">Редактировать cookies</string>
+    <string name="high_res">Воспроизведение и загрузка (для премиум-контента / более высоких разрешений видео и качества аудио)</string>
+    <string name="ai_subtitle">Получение сведений о потоке (для ИИ-субтитров)</string>
+    <string name="cookie_functions_title">Управление доступом</string>
+    
 </resources>
