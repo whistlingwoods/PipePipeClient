@@ -990,9 +990,9 @@
     <!-- Channel tabs -->
     <string name="channel_tab_videos">Видео</string>
     <string name="channel_tab_tracks">Треки</string>
-    <string name="channel_tab_livestreams">Трансляции</string>
+    <string name="channel_tab_livestreams">Стримы</string>
     <string name="channel_tab_shorts">Shorts</string>
-    <string name="channel_tab_playlists">Плейлисты</string>
+    <string name="channel_tab_playlists">Подборки</string>
     <string name="channel_tab_channels">Каналы</string>
     <string name="channel_tab_albums">Альбомы</string>
     <string name="channel_tab_info">О канале</string>
