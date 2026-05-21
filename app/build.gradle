@@ -38,7 +38,7 @@ android {
             enable true
             universalApk false // If true, also generate a universal APK
 //            include "armeabi-v7a", "arm64-v8a", "x86_64", "x86"
-            include "arm64-v8a"
+            include "armeabi-v7a", "arm64-v8a"
         }
     }
     android.applicationVariants.all { variant ->
@@ -215,7 +215,7 @@ dependencies {
     // name and the commit hash with the commit hash of the (pushed) commit you want to test
     // This works thanks to JitPack: https://jitpack.io/
     implementation 'com.github.TeamNewPipe:nanojson:1d9e1aea9049fc9f85e68b43ba39fe7be1c1f751'
-    implementation 'com.github.whistlingwoods:PipePipeExtractor:v5.0.1'
+    implementation 'com.github.whistlingwoods:PipePipeExtractor:v5.0.2'
 
 /** Checkstyle **/
     checkstyle "com.puppycrawl.tools:checkstyle:${checkstyleVersion}"
