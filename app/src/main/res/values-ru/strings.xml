@@ -529,7 +529,7 @@
 <string name="playback_tempo">Темп</string>
 <string name="playback_pitch">Тон</string>
 <string name="unhook_checkbox">Unhook (может вызвать искажения)</string>
-<string name="skip_silence_checkbox"Проматывать тишину</string>
+<string name="skip_silence_checkbox">Проматывать тишину</string>
 <string name="playback_step">Шаг</string>
 <string name="playback_reset">Сброс</string>
 <string name="percent">Проценты</string>
@@ -700,7 +700,6 @@
 <string name="feed_processing_message">Обработка канала…</string>
 <string name="feed_new_items">Новое на канале</string>
 <string name="feed_group_dialog_select_subscriptions">Выберите подписки</string>
-<string name="feed_group_dialog_empty_selection">Подписки не выбраны</string>
 <string name="feed_group_dialog_empty_selection">Подписки не выбраны</string>
 <plurals name="feed_group_dialog_selection_count">
 <item quantity="one">%d выбрана</item>
@@ -934,7 +933,7 @@
 <string name="recommended_videos">Рекомендованые видео</string>
 <string name="top_lives">Популярные трансляции</string>
 <string name="recommended_lives">Рекомендуемые трансляции</string>
-<string name="enable_eye_protection_summary">Отключить динамические темы и использовать режим защиты зрения для всех сервисов/string>
+<string name="enable_eye_protection_summary">Отключить динамические темы и использовать режим защиты зрения для всех сервисов</string>
 <string name="enable_eye_protection_title">Защита зрения</string>
 <string name="account">Аккаунт</string>
 <string name="settings_category_niconico_account_title">Аккаунт NicoNico</string>
