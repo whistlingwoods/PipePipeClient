@@ -43,6 +43,8 @@ public class AdvancedSettingsFragment extends BasePreferenceFragment implements 
             ServiceHelper.initServices(this.getContext());
         } else if(key.equals(getString(R.string.disable_android_auto_key))) {
             DeviceUtils.updateAndroidAutoComponentState(requireContext());
+        } else if (key.equals(getString(R.string.show_dislike_key))) {
+            ServiceHelper.initServices(this.getContext());
         }
     }
 }
