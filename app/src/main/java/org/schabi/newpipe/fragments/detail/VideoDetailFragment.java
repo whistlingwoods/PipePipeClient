@@ -963,14 +963,17 @@ public final class VideoDetailFragment
                                    @Nullable final String newUrl,
                                    @NonNull final String newTitle,
                                    @Nullable final PlayQueue newQueue) {
-        if (isPlayerAvailable() && newQueue != null && playQueue != null
-                && playQueue.getItem() != null && !playQueue.getItem().getUrl().equals(newUrl)) {
-            // Preloading can be disabled since playback is surely being replaced.
-            player.disablePreloadingOfCurrentTrack();
-        }
+        loadVideoIfUserConfirms(newUrl, () -> {
+            if (isPlayerAvailable() && newQueue != null && playQueue != null
+                    && playQueue.getItem() != null
+                    && !playQueue.getItem().getUrl().equals(newUrl)) {
+                // Preloading can be disabled since playback is surely being replaced.
+                player.disablePreloadingOfCurrentTrack();
+            }
 
-        setInitialData(newServiceId, newUrl, newTitle, newQueue);
-        startLoading(false, true);
+            setInitialData(newServiceId, newUrl, newTitle, newQueue);
+            startLoading(false, true);
+        });
     }
 
     private void prepareAndHandleInfoIfNeededAfterDelay(final StreamInfo info,
@@ -2459,12 +2462,41 @@ public final class VideoDetailFragment
 
     private void replaceQueueIfUserConfirms(final Runnable onAllow) {
         @Nullable final PlayQueue activeQueue = isPlayerAvailable() ? player.getPlayQueue() : null;
+        final boolean hasMultiItemQueue = activeQueue != null && activeQueue.size() > 1;
 
         // Player will have STATE_IDLE when a user pressed back button
         if (isClearingQueueConfirmationRequired(activity)
                 && playerIsNotStopped()
+                && hasMultiItemQueue
                 && activeQueue != null
                 && !activeQueue.equals(playQueue)) {
+            showClearingQueueConfirmation(onAllow);
+        } else {
+            onAllow.run();
+        }
+    }
+
+    /**
+     * Same purpose as {@link #replaceQueueIfUserConfirms(Runnable)}, but meant to be called
+     * before the new stream's data has been loaded (e.g. from {@link #selectAndLoadVideo}),
+     * i.e. before {@link #playQueue} has been updated to reflect the new target. Since
+     * {@link #playQueue} cannot be used for comparison yet, the queue currently playing in the
+     * active player is compared directly against the URL of the stream about to be loaded.
+     *
+     * @param newUrl  the url of the stream that is about to replace the active one, if confirmed
+     * @param onAllow the action to run once the navigation is allowed to proceed
+     */
+    private void loadVideoIfUserConfirms(@Nullable final String newUrl, final Runnable onAllow) {
+        @Nullable final PlayQueue activeQueue = isPlayerAvailable() ? player.getPlayQueue() : null;
+        @Nullable final PlayQueueItem activeItem =
+                activeQueue != null ? activeQueue.getItem() : null;
+        final boolean hasMultiItemQueue = activeQueue != null && activeQueue.size() > 1;
+
+        if (isClearingQueueConfirmationRequired(activity)
+                && playerIsNotStopped()
+                && hasMultiItemQueue
+                && activeItem != null
+                && !activeItem.getUrl().equals(newUrl)) {
             showClearingQueueConfirmation(onAllow);
         } else {
             onAllow.run();
